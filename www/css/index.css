@@ -1,0 +1,999 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+body {
+   
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	font-size:12px;
+	box-sizing: border-box;
+	background:red;
+	width:100%;
+
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,f9f9f9+100 */
+background: rgb(234,234,234); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(234,234,234,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(234,234,234,1) 0%,rgba(249,249,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(234,234,234,1) 0%,rgba(249,249,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#f9f9f9',GradientType=1 ); /* IE6-9 */}
+
+
+/*---------inhoud-----*/
+.app {
+	text-align:center;
+	margin-top:0px;
+	width:100%;
+	box-sizing: border-box;	
+}
+	
+.container{
+padding:0px 20px 0px 20px; 
+ box-sizing: border-box;
+ width:100%;
+ }
+
+
+
+/*---------header-----*/
+
+header{
+	background:white;
+	width:100%;
+	background: url(../img/hageland2.jpg) center no-repeat;
+	background-size:cover;
+	height:80px;
+}
+
+
+
+/*-------font------*/
+
+
+h1 {
+    font-size:24px;
+    font-weight:bold;
+    padding:0px;
+	margin-top:22px;
+	color:white;
+	text-align:center;
+	position:absolute;
+	font-family: 'Titillium Web', sans-serif;
+	margin-left:50%;
+	left:-50px;
+	}
+
+
+h2{
+	font-size:10px;
+	color:#450500;
+}
+
+
+/*------knoppen-----*/
+
+.knop{
+	float:left;
+	width:31.5%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+background: rgb(221,4,4); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+border-radius:10px;
+margin:2px;
+
+
+}
+
+img.apps{
+	float:left;
+	width:100%;
+	}
+
+.buttons{
+	margin-top:-30px;
+	margin-bottom:60px;
+	width:100%
+	}
+	
+
+h2.apps{
+	text-transform:uppercase;
+	color:#450500;
+	font-family: 'Titillium Web', sans-serif;
+	float:left;
+	width:33.3%;
+	margin-bottom:20px;
+	}
+
+img.chat{
+	width:150px;
+	margin-top:60px;
+}
+
+/*------links/lijnen-----*/
+
+a{
+	text-decoration:none;
+	color:#450500;
+}
+
+	
+.submenu{
+	margin-bottom:0px;
+	background:white;
+	width:100%;
+	height:35px;
+	border-bottom:solid 1px lightgrey;
+	
+}
+
+
+/*---------MENU'S---------*/
+
+/*-------klapmenu's--------*/
+
+
+.hamburger{
+  background:none;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:26px;
+  float:left;
+}
+
+.cross{
+  background:none;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:21px;
+  float:left;
+  }
+
+.back{
+  background:none;
+  line-height:45px;
+  padding:0px 15px 0px 0px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:26px;
+  float:left;
+}
+
+.cog{
+  background:none;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  margin-top:31px;
+  float:right;
+}
+
+.search{
+  background:none;
+  padding:0px 0px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:29px;
+  float:right;
+ 
+}
+
+.kruis{
+  background:none;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  margin-top:31px;
+  float:right;
+}
+
+
+  
+.menu,.cogmenu{z-index:1000000; font-weight:bold; font-size:1em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul,.cogmenu ul{margin: 0; padding: 0; list-style-type: none; list-style-image: none;	}
+.menu li,.cogmenu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover,.cogmenu li:hover{display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;color:white;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+background: rgb(221,4,4); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */}
+
+
+.menu ul li a,.cogmenu ul li a { text-decoration:none;  margin: 0px; color:#450500; z-index:1000000000000;}
+.menu ul li a:hover,.cogmenu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a,.cogmenu a{text-decoration:none; color:#450500;}
+.menu a:hover,.cogmenu a:hover{text-decoration:none; color:#666;}
+
+li.afmelden{background:grey;
+color:white;}
+
+/*---------------*/
+
+/*------favorietenbalk-----*/
+
+
+/*-----.favo i{float:left;
+	width:7%;
+	margin:20px 0px 0px 35px;
+	color:#561400;
+	font-size:18px;
+	
+}
+
+div.favo{background:yellow;}-----*/
+
+
+
+i#onderhoud{color:#C4161D;}
+
+.favo i:hover{color:#640C00;}
+	
+/*-----------*/
+/*--------EINDE MENU'S--------*/
+
+
+
+/*--------onderhoud------*/
+p.onderhoud{
+color:#450500;
+width:200px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+font-size:20px;
+}
+
+
+/*--opening---*/
+
+h2.opening{
+	font-size:15px;
+	margin-left:0px;
+	color:white;
+	}
+
+
+
+
+/*------nieuws P1-----*/
+
+
+
+
+p.nieuws{
+	color:white;
+	
+	margin:10px 10px 0px 10px;
+	clear:both;
+	line-height:23px;
+	font-size:18px;
+	}
+
+
+
+/*----nieuws P2------*/
+
+
+h2.nieuwss{
+	color:#450500;
+	font-size:23px;
+	text-align:left;}
+
+p.nieuws2{text-align:left;color:#450500;}
+
+
+/*-------agenda-----*/
+
+
+p.agenda{
+color:white;
+font-weight:800;
+font-size:16px;
+padding:20px;
+margin:0px -20px 0px -20px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+background: rgb(221,4,4); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+}
+
+p.agenda:hover{background:#450500;}
+
+
+article.date{width:60%;text-align:left;font-size:10px;}
+
+
+i#date{padding:2px;width:10%;}
+
+.datetile{width:20%;
+float:left;
+font-size:10px;
+color:#808080;
+margin-left:6px;
+text-align:center;}
+
+.datetile:last-of-type{ font-size:12px;
+padding-top:10px;
+width:10%;}
+
+.datesub{width:100%;margin:0px -20px 10px -20px;position:fixed;bottom:0; background:white;}
+
+/*-----kaart------*/
+
+iframe{
+	margin:0px -20px 0px -20px;
+	width:100%;
+}
+
+
+/*-------vraag-----*/
+
+form{width:100%}
+
+input{width:100%; margin-bottom:20px;}
+
+input.vraag:last-of-type{padding-bottom:10em;}
+
+label{
+	float:left;
+	padding-bottom:1em;
+	color:#450500;
+	width:100%;
+}
+
+input.chat{
+	padding:20px 0px 20px 0px;
+	width:100%;
+	margin:20px 0px 0px 0px;
+	}
+
+
+
+
+/*-----eloket-----*/
+
+
+
+div.ticket:nth-of-type(even){
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+background: rgb(221,4,4); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+text-align:left;
+margin:0px -20px 0px -20px;
+padding:10px;
+}
+
+div.ticket:nth-of-type(odd){/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#450500+0,6b0c13+100 */
+background: #450500; /* Old browsers */
+background: -moz-linear-gradient(left, #450500 0%, #6b0c13 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #450500 0%,#6b0c13 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #450500 0%,#6b0c13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#450500', endColorstr='#6b0c13',GradientType=1 ); /* IE6-9 */
+margin:0px -20px 0px -20px;
+text-align:left;
+padding:10px;
+}
+
+
+p.ticket:first-of-type{font-size:16px;}
+p.ticket{
+	color:white;
+	padding-bottom:30px;
+	margin:0px 10px 0px 10px;
+	clear:both;
+	line-height:23px;
+	font-size:13px;}
+	
+
+h2.ticket{color:white;font-size:20px;margin-left:10px;}
+
+button.ticket{
+margin:0px 0px 20px 10px;
+background:white;
+border:solid 1px white;
+width:40%;
+color:#450500;
+}
+
+/*------afvalophaling-------*/
+
+
+
+img.android{float:left;
+width:30%;
+color:#C4161D;
+margin-top:20px;
+margin-left:60px;
+}
+
+img.apple{float:left;
+width:30%;
+color:#C4161D;
+margin-top:20px;
+margin-left:10px;
+}
+
+.device{width:100%;}
+
+p.afval{
+	margin-bottom:3em;
+	color:#450500;}
+
+p.download{
+	font-weight:bold;
+	color:#450500;}
+
+h2.afval{font-size:18px;color:#450500}
+
+/*-------Bestuur-----*/
+
+
+
+h2.app{font-size:24px;color:#C4161D;}
+
+/*-------Meldpunt-----*/
+
+input.meldpunt{padding:0px 0px 40px 0px;}
+
+/*---------zoek-------*/
+
+.trefwoorden{
+	text-align:left;
+	color:#450500;
+	margin-top:20px;
+}
+
+ul.trefwoorden{
+	float:left;
+	width:36%;
+	color:#450500;
+	}
+
+p.resultaat{
+	color:#C4161D;
+	font-style:italic;
+	}
+
+p.resultaat:first-of-type{color:black;}
+
+
+/*--------sport----*/
+
+
+h2.verenig{
+	width:100%;
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
+	}
+
+
+.hamburger-active li{
+	background:grey;
+	color:white;
+	}
+
+
+
+/*-----*/
+
+
+/*.home{
+	color:#808080;
+	font-size:20px;
+	width:5%;
+	margin-top:10px;
+	margin-bottom:0px;
+	margin-right:26px;
+	float:right;
+	width:5%;
+}*/
+
+
+
+/*.search{
+	color:#808080;
+	font-size:20px;
+	float:right;
+	margin-top:10px;
+	width:5%;
+	margin-right:20px;
+
+	}*/
+.location{
+	color:#808080;
+	font-size:20px;
+	margin-top:5px;
+	margin-left:15px;
+	float:left;
+	
+	}
+.favo{
+	color:#808080;
+	font-size:20px;
+	margin-top:5px;
+	margin-right:15px;
+	float:right;
+	
+	
+
+}
+
+
+
+
+.pijlen{
+width:100%;
+display:block;
+margin-top:5px;
+
+}
+
+
+
+/*------*/
+
+select{
+
+	background:white;
+	color:#808080 ;
+	border:1px solid #8080800;
+	margin-top:22px;
+	margin-bottom:-40px;
+	display:block;
+	width:60%;
+	text-align:center;
+}
+
+
+/*----------*/
+
+
+
+
+
+
+img.nieuws{
+	width:100%;
+	margin:-20px 20px 0px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+
+img.head{
+	width:80px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+h2.head{
+	color:#C4161D;
+	margin-top:10px;
+	}
+
+h2.nieuws{
+	font-size:14px;
+	text-align:left;
+	color:white;
+	margin:20px 10px 0px 10px;
+	}
+
+img.bestuur{
+width:100%;
+color:white;
+margin-left:auto;
+margin-right:auto;
+display:block;
+margin-top:-20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+
+p.bestuur{
+	text-align:left;
+	color:white;
+	font-size:13px;
+	padding-left:10px;
+	}
+
+h2.bestuur{color:white;
+	font-size:20px;
+	margin-left:10px;
+	padding-top:10px;
+}
+
+.gemeente{color:white;}
+
+
+img.sterren{
+	width:40%;
+	margin-left:5px;
+}
+
+img.full{
+	margin-top:10px;
+	width:100%;
+	}
+
+img.ticket{width:100%;}
+
+button.koop{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+	background: rgb(221,4,4); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+	color:white;
+	border:1px solid white;
+	width:100%;
+	margin-bottom:20px;
+}
+
+button.locatie{
+	background:white;
+	color:#561400;
+	border:1px solid white;
+	width:30%;
+	float:left;
+	display:block;
+	margin-left:10px;
+	margin-bottom:20px;
+	height:40px;
+	
+}
+
+
+/*-----footer-----*/
+
+footer{
+	height:10px;
+	clear:both;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
+	background: rgb(221,4,4); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+	width:100%;
+	position:fixed;
+	bottom:0;
+}
+
+p.footer{
+	text-align:center;
+	font-size:4px;   
+	color:white;
+	width:100%;
+}
+
+
+
+/*--------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUMOSELECT OVERWRITE */
+
+.sumo{
+	margin-top:5px;
+	position:absolute;
+	z-index:10000;
+	margin-left:240px;
+	color: #808080;
+	float:right;
+	font-size:20px;
+
+}
+
+.SumoSelect {
+	position:absolute;
+	font-size: 16px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#808080;
+	background:white;
+	font-family: 'Titillium Web', sans-serif;
+	margin-left:50%;
+	width:150px;
+	left:-85px;	
+}
+
+.sumo-wrapper {
+	display:inline-block;	
+	width:100%;
+}
+
+.sumo-wrapper .sumo-half .SumoSelect{
+	display:inline-block;	
+	width: 49%;	
+}
+
+.sumo-wrapper .sumo-third .SumoSelect{
+	display:inline-block;	
+	width: 32%;	
+}
+
+.sumo-wrapper .sumo-fourth .SumoSelect{
+	display:inline-block;	
+	width: 23%;	
+}
+
+
+
+
+.SumoSelect > .CaptionCont > span {
+	cursor:pointer;
+	width:100%;
+	margin-left:5px;
+}
+
+.SlectBox {
+	width:100%;
+	display:block !important;
+	cursor:pointer;
+}
+
+.SumoSelect > .CaptionCont {
+	border:none;
+    border-radius: 0px;
+    margin: 0;
+    min-height: 23px;
+    position: relative;
+	line-height: 23px;	
+}
+
+
+#left .SumoSelect > .CaptionCont {
+	border:none;
+	border-bottom: 1px solid #a4a4a4;
+	text-transform:uppercase;
+}
+
+.SumoSelect:hover > .CaptionCont {
+	box-shadow: none;
+	border-color: #a4a4a4;
+}
+
+li.opt.option-create {
+	background-color:#bcc700;
+}
+
+li.opt.option-create label{
+	color:white;	
+	font-weight:normal;
+}
+li.opt.option-create:hover {
+	background-color:#bcc700 !important;
+
+}
+li.opt.option-create:hover label{
+	color:black;	
+}
+
+li.opt.inactive {
+	color: 	#a7a08d;
+}
+
+li.opt.inactive:hover {
+	color: 	#fff;
+}
+
+#searchproject {
+	margin-top:15px;
+}
+
+#createreport {
+	margin-top:15px;
+}
+
+.SumoSelect > .optWrapper {
+	text-transform:uppercase;
+	text-align:center;
+
+	
+}
+
+.open .SumoSelect {
+	margin-top:20px
+}
+
+.open .SumoSelect > .optWrapper {
+    opacity: 1;
+    top: 35px;
+    /*visibility: visible;*/
+	display:block;
+    z-index: 101;
+	top: 0px;
+	min-height:250px;
+	position:relative;
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay{
+   /* background-color:#a4a4a4;*/
+    background: rgba(64, 58, 38, 0.4);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	z-index:102;
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay i{
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    margin-left: -23px;
+    margin-top: -23px;
+    z-index:98;
+    overflow: auto;
+	font-size:25px;
+	z-index:103;
+	color:grey;
+
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay img{	
+	top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    z-index:98;
+    overflow: auto;
+	z-index:103;
+	position:relative;
+	width:50px;
+	height:50px;
+
+}
+
+
+.open .SumoSelect .CaptionCont.SelectBox {
+	display:none;	
+}
+
+.SumoSelect > .CaptionCont > label {
+    width: 40px;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+	background-image:none;
+	margin-top:3px;
+	opacity:1;
+	}
+	
+.SumoSelect > .CaptionCont > label > i:before {
+    content: "\f078"; 
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-feature-settings: normal;
+	font-kerning: auto;
+	font-language-override: normal;
+	font-size: inherit;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-synthesis: weight style;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: auto;
+	color: #808080;
+	font-size:12px;
+	
+	
+ }
+/*
+.open .SumoSelect.hideCaption .CaptionCont.SlectBox {
+	display:none !important;	
+}
+*/
+
+.open .SumoSelect > .optWrapper > .options > li {
+ 	font-weight: bold;
+	
+}
+
+.SumoSelect > .optWrapper > .options li label {
+   color: #808080;
+}
+
+.open .SumoSelect > .optWrapper > .options > li.selected {
+ 	background-color: #403a26;
+    color: #fff;
+	
+}
+
+.SumoSelect > .optWrapper.isFloating {
+	height:250px;
+	max-height:250px;
+	width:100%;
+}
+
+/*For multiselect*/
+.open .SumoSelect > .optWrapper > .options > .group > label {
+	color:#B9D82F;	
+}
+
+.open .SumoSelect > .optWrapper > .options > .group > ul > li.selected {
+    background-color: #403a26;
+    color: #fff;
+}
+
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i, .SumoSelect .select-all.selected > span i, .SumoSelect .select-all.partial > span i {
+    background-color: #bcc700;
+   
+}
+
+/*END for multiselect*/
+#left .SumoSelect > .CaptionCont.search input.search-txt{
+	border-radius: 0px;	
+}
+
+.SumoSelect > .optWrapper > .options li.opt:hover { background-color: #A7A08D; }
+
+/* Report Bar styling */
+
+.bar-wrapper {
+	width:88%;
+	float:left;
+}
+
+.bar-percent {
+	width:12%;
+	float:right;
+}
+
+
+

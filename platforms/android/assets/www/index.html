@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; img-src *; media-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/sumoselect.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<title>Hageland app</title>
+</head>
+
+<header>
+  <button class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <button class="cross">&#735;</button>
+  <div class="menu">
+    <ul>
+      <a class="intern" href="nieuws"><li>Nieuws</li></a> 
+      <a class="intern" href="agenda"><li>Agenda</li></a>
+      <a class="intern" href="gemeente"><li>Gemeentediensten</li></a> 
+      <a class="intern" href="ondernemingen"><li>Ondernemingen</li></a> 
+      <a class="intern" href="verenigingen"><li>Verenigingen</li></a> 
+      <a class="intern" href="zorg"><li>Zorg</li></a> 
+      <a class="intern" href="http://www.straffestreek.be/ontdek"><li>Streekproducten</li></a> 
+      <a class="intern" href="toerisme"><li>Toerisme</li></a> 
+      <a class="intern" href="kaart"><li>Op de kaart</li></a> 
+      <a class="afmelden" href="#"><li class="afmelden">Afmelden</li></a>
+    </ul>
+  </div>
+  
+  
+  <button class="cog"><i id="cog" class="fa fa-cog" aria-hidden="true"></i></button>
+  <button class="kruis">&#735;</button>
+  <div class="cogmenu">
+    <ul>
+      <a href="#">
+      <li>Jouw gegevens</li>
+      </a> <a href="#">
+      <li>Gemeentevoorkeuren</li>
+      </a> <a href="#">
+      <li>Nieuwsvoorkeuren</li>
+      </a> <a href="#">
+      <li>Notificaties</li>
+      </a> <a href="#">
+      <li>Mijn account</li>
+      </a> <a href="#">
+      <li>Hulp</li>
+      </a>
+    </ul>
+  </div>
+  <a href="index.html">
+  <h1>Hageland</h1>
+  </a> <img  class="header" src="img/hageland2.jpg"> 
+  
+  
+</header>
+
+<div class="submenu">
+<div>
+  <select class="SlectBox">
+    <option value="Aarschot">Aarschot</option>
+    <option value="Leuven">Leuven</option>
+    <option value="Tienen">Tienen</option>
+    <option value="Diest">Diest</option>
+    <option value="Scherpenheuvel">Scherpenheuvel</option>
+    <option value="Zichem">Zichem</option>
+  </select>
+</div>
+<!-----Select box-->
+
+
+
+<div class="pijlen"> 
+<a class="back" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+<a class="home intern" href="home"><i class="fa fa-home" aria-hidden="true"></i></a></div>
+
+
+<!---<div class="favo">
+<i class="fa fa-star-o" aria-hidden="true">
+<i class="fa fa-compass" aria-hidden="true"></i>
+<i class="fa fa-search" aria-hidden="true"></i>
+</div>favo----->
+
+</div><!----submenu--->
+
+ <!---div class="locatie">
+   		<button id="getposition" class="locatie">Locatie bepalen</button>
+        <button id="watchposition" class="locatie">Locatie bekijken</button>
+  </div>
+  
+  <div id="debug">Koen Daelman</div>------>
+   
+<hr>
+  	<body>
+    
+    <div class="container">
+    
+<!----<div class="pijlen"> 
+<a class="back" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+<a class="home intern" href="home"><i class="fa fa-home" aria-hidden="true"></i></a>
+</div>---->
+    
+    	<div class="app" id="content">
+        
+ 
+        </div>
+       
+          
+          
+      
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+   	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type="text/javascript" src="js/cog.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.js"></script>
+    
+	
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    
+</body>
+<!-----<footer><p class="footer">Officiële Hageland App 	&copy;</p></footer>----->
+</html>

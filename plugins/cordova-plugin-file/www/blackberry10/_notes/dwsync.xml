@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="copyTo.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="createEntryFromNative.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="FileProxy.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="FileSystem.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="getDirectory.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="getFile.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="getFileMetadata.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="getMetadata.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="getParent.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="info.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name=".jshintrc" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="moveTo.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="readAsArrayBuffer.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="readAsBinaryString.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="readAsDataURL.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="readAsText.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="readEntries.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="remove.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="removeRecursively.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="requestAllFileSystems.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="requestAnimationFrame.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="requestFileSystem.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="resolveLocalFileSystemURI.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="setMetadata.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="truncate.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+<file name="write.js" server="web02.tripleclick.be" local="131357946600000000" remote="131357946600000000" />
+</dwsync>
