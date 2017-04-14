@@ -34,9 +34,15 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+      
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+
+       //navigator.splashscreen.show();
+
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -45,12 +51,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
         console.log('Received Event: ' + id);
 		
-		//geolocatie//
+		    //geolocatie//
 
-	document.getElementById("getPosition").addEventListener("click", getPosition);
-	document.getElementById("watchPosition").addEventListener("click", watchPosition);
-	
-	$("#debug").html("receivedevents")
+      	document.getElementById("getPosition").addEventListener("click", getPosition);
+      	document.getElementById("watchPosition").addEventListener("click", watchPosition);
+      	
+      	$("#debug").html("receivedevents");
+
+
 
 	
     }

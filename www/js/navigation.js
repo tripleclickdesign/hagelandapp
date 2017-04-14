@@ -5,6 +5,8 @@ thePage="home";
 loadPage();
 
 $(document).ready(function(){
+
+
 	$('.SlectBox').SumoSelect();
 	$(document).on("click","a.intern",function(event){
 		event.preventDefault();
