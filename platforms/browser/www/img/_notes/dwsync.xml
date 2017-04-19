@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name=".DS_Store" server="web02.tripleclick.be" local="131359474800000000" remote="131359474800000000" />
-<file name="hageland2.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
-<file name="hageland.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
-<file name="logo.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="112.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="afval.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="agenda.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
@@ -12,19 +8,20 @@
 <file name="apotheken.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="apple.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="auto.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
-<file name="bestuur.jpeg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
-<file name="bestuur.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="bestuur2.jpeg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="bestuur3.jpeg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="bestuur.jpeg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="bestuur.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="bier.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="big.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="cadeau.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="chat.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
-<file name="chatten.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="chatten2.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="chatten.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="cultuur.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="dans.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="dokters.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name=".DS_Store" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="erfgoed.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="eten.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="feestje.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
@@ -32,12 +29,15 @@
 <file name="flex.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="fruit.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="gemeente.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="hageland2.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="hageland apps-10.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="hageland.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="hapjes.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="highland.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="jeugd.jpg" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="jeugd.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="kaart.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
+<file name="logo.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="meldpunt.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="milieu.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />
 <file name="nieuws.png" server="web02.tripleclick.be" local="131364555600000000" remote="131364555600000000" />

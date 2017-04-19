@@ -5,8 +5,6 @@ thePage="home";
 loadPage();
 
 $(document).ready(function(){
-
-
 	$('.SlectBox').SumoSelect();
 	$(document).on("click","a.intern",function(event){
 		event.preventDefault();
@@ -21,6 +19,9 @@ $(document).ready(function(){
 	
 	$(document).on("click",".location",function(event){
 			getPosition();
+	});
+	$(document).on("click","#qrbutton",function(event){
+			qrScan();
 	});
 	
 	$(document).on("click","a.back",function(event){

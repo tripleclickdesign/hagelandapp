@@ -166,15 +166,5 @@
         },
         "is_top_level": true,
         "variables": {}
-    },
-    "phonegap-plugin-push": {
-        "source": {
-            "type": "local",
-            "path": "plugins\\phonegap-plugin-push"
-        },
-        "is_top_level": true,
-        "variables": {
-            "SENDER_ID": "11111"
-        }
     }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BarcodeFormat.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="Binarizer.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="BinaryBitmap.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="ChecksumException.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="DecodeHintType.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="EncodeHintType.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="FakeR.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="FormatException.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="LuminanceSource.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="MultiFormatReader.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="MultiFormatWriter.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="NotFoundException.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="PlanarYUVLuminanceSource.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="ReaderException.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="Reader.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="Result.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="ResultMetadataType.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="ResultPointCallback.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="ResultPoint.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="RGBLuminanceSource.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="WriterException.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="Writer.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+</dwsync>

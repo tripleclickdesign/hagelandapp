@@ -34,15 +34,9 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
-      
-
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-
-       //navigator.splashscreen.show();
-
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -51,14 +45,12 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
         console.log('Received Event: ' + id);
 		
-		    //geolocatie//
+		//geolocatie//
 
-      	document.getElementById("getPosition").addEventListener("click", getPosition);
-      	document.getElementById("watchPosition").addEventListener("click", watchPosition);
-      	
-      	$("#debug").html("receivedevents");
-
-
+		//document.getElementById("getPosition").addEventListener("click", getPosition);
+		//document.getElementById("watchPosition").addEventListener("click", watchPosition);
+	
+	$("#debug").html("receivedevents")
 
 	
     }
@@ -94,7 +86,6 @@ function loadnews(){
 	});	
 
 }
-
 
 //getposition//
 //maps API key AIzaSyD60JeZBaJOiY9B5-4de4ptq2-vVgLEcuA
@@ -154,7 +145,7 @@ function getReverseGeocodingData(lat,lng) {
 
 
 //watchposition//
-
+/*
 function watchPosition() {
 
    var options = {
@@ -181,4 +172,30 @@ function watchPosition() {
       console.log('code: '    + error.code    + '\n' +'message: ' + error.message + '\n');
    }
 
-}
+}*/
+
+function qrScan(){
+	   cordova.plugins.barcodeScanner.scan(
+		  function (result) {
+			  alert("We got a barcode\n" +
+					"Result: " + result.text + "\n" +
+					"Format: " + result.format + "\n" +
+					"Cancelled: " + result.cancelled);
+		  },
+		  function (error) {
+			  alert("Scanning failed: " + error);
+		  },
+		  {
+			  preferFrontCamera : false, // iOS and Android
+			  showFlipCameraButton : true, // iOS and Android
+			  showTorchButton : true, // iOS and Android
+			  torchOn: true, // Android, launch with the torch switched on (if available)
+			  prompt : "Place a barcode inside the scan area", // Android
+			  resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+			  formats : "QR_CODE,PDF_417", // default: all but PDF_417 and RSS_EXPANDED
+			  orientation : "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
+			  disableAnimations : true, // iOS
+			  disableSuccessBeep: false // iOS
+		  }
+   );
+	}
