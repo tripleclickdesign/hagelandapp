@@ -8,7 +8,6 @@
         tripleclick
     </author>
     <content src="index.html" />
-    <script src="index.js" />
     <icon src="icon.png" />
     <icon gap:platform="ios" height="60" src="res/icons/ios/icon-60.png" width="60" />
     <icon gap:platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
@@ -58,6 +57,4 @@
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="SplashScreenDelay" value="10000" />
 </widget>
