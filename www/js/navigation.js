@@ -1,11 +1,27 @@
 // JavaScript Document
-//window.open = cordova.InAppBrowser.open;
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	/*StatusBar.overlaysWebView(false);
+	StatusBar.styleBlackTranslucent();*/
+    //window.open = cordova.InAppBrowser.open;
+	//var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+}
+
 var thePage,theSubPage,theSubSubPage;
+var	markers = [];
 thePage="home";
 loadPage();
 
 $(document).ready(function(){
 	$('.SlectBox').SumoSelect();
+	
+	$("#regio-filter").change(function(){
+		console.log($(this).val());
+		loadPage();
+	});
+	
+	
 	$(document).on("click","a.intern",function(event){
 		event.preventDefault();
 		href=$(this).attr("href");
@@ -34,16 +50,23 @@ $(document).ready(function(){
 	$(document).on("click","a.extern",function(e){
 		e.preventDefault();
 		var linktarget = $(this).attr("href");
+		
 		if (typeof navigator !== "undefined" && navigator.app) {
 			// Mobile device.
 			navigator.app.loadUrl(linktarget, {openExternal: true});
+			
+			
+			
 		} else {
 			// Possible web browser
-			window.open(linktarget, "_blank");
+			
+			window.open(linktarget, "_blank", "location=no,toolbarposition=top");
+			
 		}
 	});
 	
 		
+	
 	$(document).on("click","a.home",function(event){
 		if(thePage.indexOf("/")==-1){
 		//niveau 1
@@ -67,11 +90,19 @@ function loadPage(){
 	/*
 	if(theSubPage) $("a.home").show();
 	else $("a.home").hide()*/
-			
+	
+	if(thePage == "agenda")	$("#overlay").show();
 			
 	if(thePage && !theSubPage){
-		$("#content").load("http://tripleclick.be/hageland_app/content/"+thePage+".php",{},function(){
+		$("#content").load("http://tripleclick.be/hageland_app/content/"+thePage+".php",{regio: $("#regio-filter").val()},function(){
+			
+			if(thePage == "agenda") $("#overlay").hide();
+
+			
 			if(thePage=="nieuws")loadnews();
+			if(thePage=="kaart"){
+					initMap('init');
+				};
 			})
 		}
 	else if(thePage && theSubPage && !theSubSubPage){
