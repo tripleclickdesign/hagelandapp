@@ -220,11 +220,13 @@ function qrScan(){
 	}
 
 function initMap(mode){
+	/*
 	$.ajax({
 		type: 'GET',
-		url: '../content/kaart/data.php',
+		url: 'http://tripleclick.be/hageland_app/content/kaart/data.php',
 		//dataType: 'json',
 		success : function(data){
+		*/
 			
 			/*
 			var data = [{
@@ -269,8 +271,8 @@ function initMap(mode){
 			
 			
 			//$.each(data, function(key, value){});
-		}		
-	});	
+		//}		
+	//});	
 }
 
 var addMarkersToMap = function(map){
