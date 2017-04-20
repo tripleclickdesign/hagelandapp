@@ -32,7 +32,7 @@ body {
 	margin:115px auto;
  }
 
-.btn-frame {
+.btn-frame, .form-frame {
 	padding:10px;
 	box-sizing:border-box;
 }
@@ -47,9 +47,50 @@ header{
 	height:80px;
 	position:fixed;
 	top:0;
+	z-index:10;
+	padding-top:30px;
+	box-sizing:border-box;
 }
 
+.menu-01 {
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+	text-align:center;
+}
+.menu-02 {
+	float:left;
+	width:50%;
+	box-sizing:border-box;
+	text-align:center;
+	font-size:24px;
+    font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	font-family: 'Titillium Web', sans-serif;
+}
 
+.menu-02 a {
+	color:#fff;
+}
+
+.menu-03 {
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+	text-align:right;
+	color:#fff;
+	padding-right:10px;
+}
+
+button i.fa-2x {
+	font-size:22px !important;
+}
+
+i.fa-2x {
+	font-size:20px !important;
+	line-height:20px;
+}
 
 /*-------font------*/
 
@@ -191,7 +232,7 @@ a{
 	border-bottom:solid 1px lightgrey;
 	position:fixed;
 	top:80px;
-	
+	z-index:9;
 }
 
 
@@ -202,62 +243,48 @@ a{
 
 .hamburger{
   background:none;
-  line-height:45px;
-  padding:0px 15px 0px 15px;
   color:white;
   border:0;
   cursor:pointer;
   outline:none;
-  margin-top:26px;
   float:left;
 }
 
 .cross{
   background:none;
-  line-height:45px;
-  padding:0px 15px 0px 15px;
   color:white;
   border:0;
   cursor:pointer;
   outline:none;
-  margin-top:21px;
   float:left;
   }
 
 .back{
   background:none;
-  line-height:45px;
-  padding:0px 15px 0px 0px;
   color:white;
   border:0;
   cursor:pointer;
   outline:none;
-  margin-top:26px;
   float:left;
 }
 
 .cog{
   background:none;
-  padding:0px 15px 0px 15px;
   color:white;
   border:0;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-  margin-top:31px;
   float:right;
 }
 
 .search{
   background:none;
-  padding:0px 0px 0px 15px;
   color:white;
   border:0;
   cursor:pointer;
-  outline:none;
-  margin-top:29px;
+  outline:none;  
   float:right;
- 
 }
 
 .kruis{
@@ -364,6 +391,11 @@ h2.opening{
 	font-weight:700;
 }
 
+.content-banner-sub {
+	box-sizing:border-box;
+	padding:10px;
+}
+
 /*------nieuws-----*/
 
 #news p {
@@ -425,7 +457,7 @@ width:10%;}
 button.bestel, button.half {
 	background:#ed7139;
 	color:#fff;
-	border:1px solid white;
+	border:none;
 	width:50%;
 	margin-right:2%;
 	display:block;
@@ -480,7 +512,7 @@ button.bestel:hover, button.half:hover {
 button.locatie {
 	background:#ed7139;
 	color:#fff;
-	border:1px solid white;
+	border:none;
 	width:32%;
 	margin-right:2%;
 	float:left;

@@ -7,7 +7,7 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         tripleclick
     </author>
-    <content src="index.html" />
+    <content src="login.html" />
     <preference name="phonegap-version" value="cli-6.3.1" />
 
     <preference name="DisallowOverscroll" value="true" />
