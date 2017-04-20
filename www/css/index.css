@@ -64,7 +64,7 @@ header{
 	box-sizing:border-box;
 	text-align:center;
 	font-size:24px;
-    font-weight:bold;
+    font-weight:700;
 	color:#FFF;
 	text-align:center;
 	font-family: 'Titillium Web', sans-serif;
@@ -92,20 +92,58 @@ i.fa-2x {
 	line-height:20px;
 }
 
+/* Login */
+
+body.login {
+	min-height:100%;
+}
+
+#login-title {
+	text-align:center;
+	font-size:49px;
+    font-weight:700;
+	color:#FFF;
+	text-align:center;
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing:border-box;
+	padding:30px 0;
+}
+
+#login-title .light {
+	font-weight:200;
+}
+
+#login-container {
+	width:100%;
+	min-height:100%;
+	margin:0 auto;
+	padding:20px;
+	box-sizing:border-box;
+	background-image:url(../img/splash2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	position:absolute;
+}
+
+#login-form {
+	width:100%;
+	box-sizing:border-box;
+	margin:0 auto;
+	max-width:300px;
+	margin-top:14%;
+}
+
+#login-form input {
+	border:none;
+	padding:10px;
+	box-sizing:border-box;
+}
+
 /*-------font------*/
 
 
 h1 {
-    font-size:24px;
-    font-weight:bold;
-    padding:0px;
-	margin-top:30px;
-	color:white;
-	text-align:center;
-	position:absolute;
-	font-family: 'Titillium Web', sans-serif;
-	margin-left:50%;
-	left:-50px;
 }
 
 
@@ -289,13 +327,11 @@ a{
 
 .kruis{
   background:none;
-  padding:0px 15px 0px 15px;
   color:white;
   border:0;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-  margin-top:31px;
   float:right;
 }
 
@@ -466,6 +502,28 @@ button.bestel, button.half {
 	cursor:pointer;
 	border-radius:5px;
 	font-size:14px;
+}
+
+button.full {
+	background: #f2a665;
+	color:#fff;
+	border:none;
+	width:100%;
+	margin-right:2%;
+	display:block;
+	margin-bottom:10px;
+	height:40px;
+	cursor:pointer;
+	border-radius:5px;
+	font-size:14px;
+}
+
+button.full.fb {
+	background: #3B5998;
+}
+
+button.full:hover {
+	background:#450500;
 }
 
 button.bestel:hover, button.half:hover {
@@ -1216,6 +1274,11 @@ h2.apps{width:20%;float:left;display:none;}
 }
 
 @media only screen and (max-width: 480px) {
+
+#login-container {
+	background-size:auto 100%;
+}
+
 
 .btn-wrapper {
 	width:33.33%;
