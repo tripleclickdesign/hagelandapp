@@ -1,20 +1,10 @@
-// JavaScript Document
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-	//StatusBar.overlaysWebView(false);
-	StatusBar.styleBlackTranslucent();
-	StatusBar.styleLightContent();
-    //window.open = cordova.InAppBrowser.open;
-	//var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
-}
-
 var thePage,theSubPage,theSubSubPage;
 var	markers = [];
 thePage="home";
 loadPage();
 
 $(document).ready(function(){
+
 	$('.SlectBox').SumoSelect();
 	
 	$("#regio-filter").change(function(){

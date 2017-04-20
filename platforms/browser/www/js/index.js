@@ -19,7 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-        this.bindEvents();
+       this.bindEvents();
     },
     // Bind Event Listeners
     //
@@ -33,28 +33,23 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+
         app.receivedEvent('deviceready');
 
         app.setupPush();
+        app.setupToolbar();
 
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-        console.log('Received Event: ' + id);
-		
-		//geolocatie//
-
-		//document.getElementById("getPosition").addEventListener("click", getPosition);
-		//document.getElementById("watchPosition").addEventListener("click", watchPosition);
-	
+      
+        console.log('Received Event: ' + id);	
 
 	
+    },
+    setupToolbar: function(){
+    	StatusBar.styleBlackTranslucent();
+		StatusBar.styleLightContent();
     },
      setupPush: function() {
         console.log('calling push init');
@@ -64,7 +59,7 @@ var app = {
             },
             "browser": {
                 //pushServiceURL: 'http://tripleclick.be/hageland_app/inc/push/push.php'
-                        pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+                pushServiceURL: 'http://push.api.phonegap.com/v1/push'
             },
             "ios": {
                 "sound": true,
@@ -86,7 +81,7 @@ var app = {
 
             }
 
-            alert(data.registrationId);
+        	$.post("http://tripleclick.be/hageland_app/inc/push/registration.php", {id: data.registrationId});
 
         });
 
@@ -103,6 +98,7 @@ var app = {
                 'Ok'                  // buttonName
             );
        });
+    }
 };
 
 
