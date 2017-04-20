@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="BitMatrixParser.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="DataBlock.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="DataMask.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="DecodedBitStreamParser.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="Decoder.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="ErrorCorrectionLevel.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="FormatInformation.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="Mode.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
-<file name="Version.java" server="web02.tripleclick.be" local="131370788400000000" remote="131370788400000000" />
+<file name="BitMatrixParser.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DataBlock.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DataMask.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DecodedBitStreamParser.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="Decoder.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="ErrorCorrectionLevel.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="FormatInformation.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="Mode.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="Version.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
 </dwsync>

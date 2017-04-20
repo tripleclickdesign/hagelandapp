@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="BeepManager.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="CaptureActivityHandler.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="CaptureActivity.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="Contents.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="DecodeFormatManager.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="DecodeHandler.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="DecodeThread.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="FinishListener.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="HelpActivity.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="HttpHelper.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="InactivityTimer.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="Intents.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="IntentSource.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="LocaleManager.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="PreferencesActivity.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="ViewfinderResultPointCallback.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
-<file name="ViewfinderView.java" server="web02.tripleclick.be" local="131370787800000000" remote="131370787800000000" />
+<file name="BeepManager.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="CaptureActivityHandler.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="CaptureActivity.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="Contents.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DecodeFormatManager.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DecodeHandler.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="DecodeThread.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="FinishListener.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="HelpActivity.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="HttpHelper.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="InactivityTimer.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="Intents.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="IntentSource.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="LocaleManager.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="PreferencesActivity.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="ViewfinderResultPointCallback.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
+<file name="ViewfinderView.java" server="web02.tripleclick.be" local="131370828600000000" remote="131370828600000000" />
 </dwsync>

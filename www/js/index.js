@@ -128,8 +128,27 @@ function getReverseGeocodingData(lat,lng) {
     geocoder.geocode({ 'latLng': latlng }, function (results, status) { 
 		if (status == google.maps.GeocoderStatus.OK) {
 			if(results[0]) {
+				//console.log(results[0]);
            	 	var address = (results[0].formatted_address);
-				alert(address);
+								
+				var place = results[0].address_components[2].long_name;
+				var zip = results[0].address_components[6].long_name;
+				
+				alert(address + " (lookup place = '"+place+"' zip = '"+zip+"')");
+				
+				//var place = "Leuven";
+				if($("#regio-filter option[value='"+place+"']").length){
+					console.log("regio filter option '"+place+"' found");	
+					$("#regio-filter").val(place);
+					$('.SlectBox')[0].sumo.reload();
+					$("#regio-filter").trigger("change");
+
+					
+				}
+				else console.log("regio filter option '"+place+"' NOT found");	//TODO FETCH FROM SERVER
+
+
+				
 			}
 			else {
 				alert('Google did not return any results.');
@@ -199,3 +218,88 @@ function qrScan(){
 		  }
    );
 	}
+
+function initMap(mode){
+	$.ajax({
+		type: 'GET',
+		url: '../content/kaart/data.php',
+		//dataType: 'json',
+		success : function(data){
+			
+			/*
+			var data = [{
+				lat:50.9960490,
+				lng: 4.7008540
+			}];
+			*/
+				
+			var marker, infobox;
+			var styledMapOptions = {name: 'Custom Style'};
+			var latlng = new google.maps.LatLng(50.876616, 4.703368);
+			var MY_MAPTYPE_ID = 'custom_style';
+			var featureOpts = [];
+
+ 			
+			var isDraggable = !('ontouchstart' in document.documentElement);
+ 			
+ 			var mapOptions = {
+				scrollwheel: true,
+				draggable: true,
+				zoom: 12,
+				center: latlng,
+				mapTypeControlOptions: {
+				  mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+				},
+				mapTypeId: MY_MAPTYPE_ID
+			  };
+			
+			if($("div#map").children().length == 0){			
+				map = new google.maps.Map(document.getElementById('map'), mapOptions);
+				customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+				map.mapTypes.set(MY_MAPTYPE_ID, customMapType);		
+				addMarkersToMap(map);	
+			}
+			var i = 0;
+			
+			closeInfoWindows();
+			deleteMarkers();
+				
+			var markerPositionArray = []; 
+			
+			
+			
+			//$.each(data, function(key, value){});
+		}		
+	});	
+}
+
+var addMarkersToMap = function(map){
+	var latitudeAndLongitudeOne = new google.maps.LatLng(50.876616, 4.703368);
+	
+	var markerOne = new google.maps.Marker({
+	position: latitudeAndLongitudeOne,
+	map: map
+	});
+	
+	var latitudeAndLongitudeTwo = new google.maps.LatLng(50.932236, 4.689164);
+	
+	var markerOne = new google.maps.Marker({
+	position: latitudeAndLongitudeTwo,
+	map: map
+	});
+}
+
+
+function deleteMarkers() {
+  
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers = [];
+}
+
+function closeInfoWindows(){	
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].infowindow.close();
+  }
+}

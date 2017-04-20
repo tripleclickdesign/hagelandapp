@@ -2,8 +2,9 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-	/*StatusBar.overlaysWebView(false);
-	StatusBar.styleBlackTranslucent();*/
+	//StatusBar.overlaysWebView(false);
+	StatusBar.styleBlackTranslucent();
+	StatusBar.styleLightContent();
     //window.open = cordova.InAppBrowser.open;
 	//var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
 }
@@ -21,6 +22,13 @@ $(document).ready(function(){
 		loadPage();
 	});
 	
+	$(document).on("click",".menu a",function(event){
+			$( ".cross" ).click();
+	});
+	
+	$(document).on("click",".cogmenu a",function(event){
+			$( ".kruis" ).click();
+	});
 	
 	$(document).on("click","a.intern",function(event){
 		event.preventDefault();

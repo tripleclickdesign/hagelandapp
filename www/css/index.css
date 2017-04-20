@@ -26,14 +26,16 @@ body {
 }
 */	
 .container{
-	padding:20px; 
 	box-sizing: border-box;
 	width:100%;
 	max-width:960px;
-	margin:0 auto;
+	margin:115px auto;
  }
 
-
+.btn-frame {
+	padding:10px;
+	box-sizing:border-box;
+}
 
 /*---------header-----*/
 
@@ -43,6 +45,8 @@ header{
 	background: url(../img/hageland2.jpg) center no-repeat;
 	background-size:cover;
 	height:80px;
+	position:fixed;
+	top:0;
 }
 
 
@@ -54,7 +58,7 @@ h1 {
     font-size:24px;
     font-weight:bold;
     padding:0px;
-	margin-top:22px;
+	margin-top:30px;
 	color:white;
 	text-align:center;
 	position:absolute;
@@ -70,6 +74,29 @@ h2{
 	font-family: 'Titillium Web', sans-serif;
 	color:#450500;
 	font-weight:700;
+}
+
+#content ul {
+	margin:0 0 0 5px;
+	padding:15px 15px;
+}
+
+#content ul li {
+	padding:5px 0; 
+}
+
+#content a {
+	color:#e40004;
+	text-decoration:none;
+}
+
+#content a:hover {
+	color:#f6ab6f;
+	text-decoration:none;
+}
+
+#content p {
+	color:#222;
 }
 
 /* CLEARFIX */
@@ -141,7 +168,7 @@ h2.apps{
 	float:left;
 	width:33.3%;
 	margin-bottom:20px;
-	}
+}
 
 img.chat{
 	width:150px;
@@ -162,6 +189,8 @@ a{
 	width:100%;
 	height:35px;
 	border-bottom:solid 1px lightgrey;
+	position:fixed;
+	top:80px;
 	
 }
 
@@ -309,7 +338,6 @@ h2.opening{
 	color:white;
 	}
 
-
 /* Page Banner */
 
 .page-banner {
@@ -323,6 +351,17 @@ h2.opening{
 	width:30%;
 	max-width:85px;
 	height:auto;
+}
+
+.page-banner-sub {
+	background-color:#f6ab6f;
+	padding:5px;
+	text-align:center;
+	font-size:16px;
+	line-height:20px;
+	font-family: 'Titillium Web', sans-serif;
+	color:#e40004;
+	font-weight:700;
 }
 
 /*------nieuws-----*/
@@ -514,12 +553,20 @@ div.ticket:nth-of-type(even){
 	color:#222;
 }
 
+div.ticket:nth-of-type(even):hover {
+	background:#E6E6E6;
+}
+
 div.ticket:nth-of-type(odd){/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#450500+0,6b0c13+100 */
 	background:#f2f2f2;
 	text-align:left;
 	box-sizing:border-box;
 	padding:10px 10px 20px 10px;
 	color:#222;
+}
+
+div.ticket:nth-of-type(odd):hover {
+	background:#E6E6E6;
 }
 
 
@@ -557,7 +604,7 @@ margin-left:60px;
 img.apple{float:left;
 width:30%;
 color:#C4161D;
-margin-top:20px;
+margin-top:12px;
 margin-left:10px;
 }
 

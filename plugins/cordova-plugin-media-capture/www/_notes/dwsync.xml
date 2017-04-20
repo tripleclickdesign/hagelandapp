@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="CaptureAudioOptions.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="CaptureError.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="CaptureImageOptions.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="capture.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="CaptureVideoOptions.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="ConfigurationData.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="MediaFileData.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
-<file name="MediaFile.js" server="web02.tripleclick.be" local="131357947800000000" remote="131357947800000000" />
+<file name="CaptureAudioOptions.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="CaptureError.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="CaptureImageOptions.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="capture.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="CaptureVideoOptions.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="ConfigurationData.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="MediaFileData.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="MediaFile.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
+<file name="helpers.js" server="web02.tripleclick.be" local="131370829800000000" remote="131370829800000000" />
 </dwsync>
