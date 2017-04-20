@@ -69,6 +69,10 @@
         },
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "85075801930",
+            "PACKAGE_NAME": "be.tripleclick.hagelandapp"
         }
     },
     "dependent_plugins": {

@@ -1,57 +1,89 @@
 // JavaScript Document
+document.addEventListener("deviceready", onDeviceReady, false);
 
+function onDeviceReady() {
+	//StatusBar.overlaysWebView(false);
+	StatusBar.styleBlackTranslucent();
+	StatusBar.styleLightContent();
+    //window.open = cordova.InAppBrowser.open;
+	//var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+}
 
-
-var thePage,theSubPage;
+var thePage,theSubPage,theSubSubPage;
+var	markers = [];
 thePage="home";
-loadPage()
+loadPage();
 
 $(document).ready(function(){
+	$('.SlectBox').SumoSelect();
+	
+	$("#regio-filter").change(function(){
+		console.log($(this).val());
+		loadPage();
+	});
+	
+	$(document).on("click",".menu a",function(event){
+			$( ".cross" ).click();
+	});
+	
+	$(document).on("click",".cogmenu a",function(event){
+			$( ".kruis" ).click();
+	});
+	
 	$(document).on("click","a.intern",function(event){
 		event.preventDefault();
-		thePage=$(this).attr("href")
-		loadPage()
+		href=$(this).attr("href");
+		var arr = href.split("/");
+		thePage=arr[0];
+		theSubPage=arr[1];
+		theSubSubPage=arr[2];
+		loadPage();
 	
 	});
 	
-
+	$(document).on("click",".location",function(event){
+			getPosition();
+	});
+	$(document).on("click","#qrbutton",function(event){
+			qrScan();
+	});
+	
 	$(document).on("click","a.back",function(event){
-		if(thePage.indexOf("/")==-1){
 			//niveau 1
-			thePage="home";
-			loadPage()
-		
-		}
-		
-	
-	else{
-		//niveau 2	
-		var arr = thePage.split("/");
-		thePage=arr[0]
-		loadPage()
-	}
-	
-	
-	
+			if(theSubPage) theSubPage = "";
+			else thePage = "home";
+			loadPage();	
 	});
-});
+	
+	$(document).on("click","a.extern",function(e){
+		e.preventDefault();
+		var linktarget = $(this).attr("href");
+		
+		if (typeof navigator !== "undefined" && navigator.app) {
+			// Mobile device.
+			navigator.app.loadUrl(linktarget, {openExternal: true});
+			
+			
+			
+		} else {
+			// Possible web browser
+			
+			window.open(linktarget, "_blank", "location=no,toolbarposition=top");
+			
+		}
+	});
 	
 		
+	
 	$(document).on("click","a.home",function(event){
 		if(thePage.indexOf("/")==-1){
 		//niveau 1
 		thePage="home";
-		loadPage()
-		
-	}
-		
+		loadPage();
+		}		
+	});
 });
 
-
-	
-
-	
-	
 
 
 
@@ -60,20 +92,38 @@ function loadPage(){
 	$("a.intern").removeClass("hamburger-active");
 	$("a.intern[href='"+thePage+"']").addClass("hamburger-active");
 	
-	if(thePage.indexOf("/")==-1){
-		$("a.back").show();
-		$("a.home").hide();
-	}
+	
+	if(thePage=="home")$("a.back").hide();
+	else $("a.back").show();
+	/*
+	if(theSubPage) $("a.home").show();
+	else $("a.home").hide()*/
+	
+	if(thePage == "agenda")	$("#overlay").show();
+			
+	if(thePage && !theSubPage){
+		$("#content").load("http://tripleclick.be/hageland_app/content/"+thePage+".php",{regio: $("#regio-filter").val()},function(){
+			
+			if(thePage == "agenda") $("#overlay").hide();
 
-	else{ $("a.home").show();
+			
+			if(thePage=="nieuws")loadnews();
+			if(thePage=="kaart"){
+					initMap('init');
+				};
+			})
+		}
+	else if(thePage && theSubPage && !theSubSubPage){
+		$("#content").load("http://tripleclick.be/hageland_app/content/"+thePage+"/"+theSubPage+".php",{},function(){})
+		}
+	else if(thePage && theSubPage && theSubSubPage){
+		$("#content").load("http://tripleclick.be/hageland_app/content/"+thePage+"/"+theSubPage+"/"+theSubSubPage+".php",{},function(){
+			})
+		}
+		
+		
 	
-	}
-	
-	
-	if(thePage=="home")
-			$("a.back").hide();
-	
-	if(thePage=="home"){
+	/*if(thePage=="home"){
 		$("#content").load("http://tripleclick.be/hageland_app/content/home.php",{},function(){
 			
 		})
@@ -136,7 +186,7 @@ function loadPage(){
 	}
 	
 	
-	/*--------gemeente------*/
+	
 	
 	else if(thePage=="gemeente"){
 		$("#content").load("http://tripleclick.be/hageland_app/content/gemeente.php",{},function(){
@@ -204,7 +254,7 @@ function loadPage(){
 	}
 	
 	
-/*--------verenigingen-------*/
+
 		
 	else if(thePage=="verenigingen/jeugd"){
 		$("#content").load("http://tripleclick.be/hageland_app/content/verenigingen/jeugd.php",{},function(){
@@ -268,7 +318,7 @@ function loadPage(){
 				})
 			}
 	
-	/*--------toerisme-------*/
+	
 	
 	
 			else if(thePage=="toerisme/fietsen"){
@@ -326,7 +376,7 @@ function loadPage(){
 			}
 			
 			
-	/*-------nieuws-----*/
+	
 	
 	
 				else if(thePage=="nieuws/nieuws"){
@@ -336,7 +386,7 @@ function loadPage(){
 			}
 			
 			
-	/*-------agenda-------*/		
+	
 			
 			
 	
@@ -347,7 +397,7 @@ function loadPage(){
 			}
 			
 			
-	/*--------ondernemignen---------*/
+
 	
 			
 		else if(thePage=="ondernemingen/eten"){
@@ -404,7 +454,7 @@ function loadPage(){
 				})
 			}
 			
-	/*-------------zorg---------*/	
+	
 
 	else if(thePage=="zorg/innood"){
 				$("#content").load("http://tripleclick.be/hageland_app/content/zorg/innood.php",{},function(){
@@ -451,7 +501,7 @@ else if(thePage=="zorg/wachtdiensten"){
 				})
 			}
 
-/*------------------kaart------------*/
+
 
 
 
@@ -460,7 +510,7 @@ else if(thePage=="kaart/kaart"){
 					
 				})
 			}
-			
+*/			
 }
 
 

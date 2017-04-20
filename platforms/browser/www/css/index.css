@@ -10,100 +10,165 @@ body {
 	margin:0px;
 	padding:0px;
 	width:100%;
-	font-size:12px;
+	font-size:14px;
+	line-height:19px;
 	box-sizing: border-box;
-	background:red;
-	
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,f9f9f9+100 */
-background: rgb(234,234,234); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(234,234,234,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(234,234,234,1) 0%,rgba(249,249,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(234,234,234,1) 0%,rgba(249,249,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#f9f9f9',GradientType=1 ); /* IE6-9 */}
+	width:100%;
+}
 
 
 /*---------inhoud-----*/
-.app {
+/*.app {
 	text-align:center;
 	margin-top:0px;
 	width:100%;
-	box-sizing: border-box;
+	box-sizing: border-box;	
 }
+*/	
+.container{
+	box-sizing: border-box;
+	width:100%;
+	max-width:960px;
+	margin:115px auto;
+ }
 
-head{width:100%;}
-	
-.container{padding:20px;  box-sizing: border-box;}
-.containerinh{padding:20px;}
-#content{width:100%;  box-sizing: border-box;}
-
+.btn-frame {
+	padding:10px;
+	box-sizing:border-box;
+}
 
 /*---------header-----*/
 
 header{
 	background:white;
-	padding-bottom:0px;
-	width:100%;	
+	width:100%;
+	background: url(../img/hageland2.jpg) center no-repeat;
+	background-size:cover;
+	height:80px;
+	position:fixed;
+	top:0;
 }
 
-img.header{
-	width:100%;
-	margin-bottom:-3px;
-}
 
 
 /*-------font------*/
 
-h1.afval{font-size:20px;}
 
 h1 {
     font-size:24px;
     font-weight:bold;
     padding:0px;
-	margin-top:20px;
+	margin-top:30px;
 	color:white;
-	display:block;
 	text-align:center;
-	width:100%;
 	position:absolute;
 	font-family: 'Titillium Web', sans-serif;
-	}
+	margin-left:50%;
+	left:-50px;
+}
 
 
 h2{
-	font-size:10px;
+	font-size:16px;
+	line-height:20px;
+	font-family: 'Titillium Web', sans-serif;
 	color:#450500;
+	font-weight:700;
 }
+
+#content ul {
+	margin:0 0 0 5px;
+	padding:15px 15px;
+}
+
+#content ul li {
+	padding:5px 0; 
+}
+
+#content a {
+	color:#e40004;
+	text-decoration:none;
+}
+
+#content a:hover {
+	color:#f6ab6f;
+	text-decoration:none;
+}
+
+#content p {
+	color:#222;
+}
+
+/* CLEARFIX */
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
 
 
 /*------knoppen-----*/
 
-.knop{
+.btn-wrapper {
+	width:25%;
+	padding:5px;
+	float:left;
+	display:block;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+.btn {
+	width:100%;
+	background: #dd0404; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #dd0404 1%, #e0773a 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #dd0404 1%,#e0773a 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #dd0404 1%,#e0773a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#e0773a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius:10px;
+	
+}
+
+.btn-copy {
+	color:#450500;
+	font-family: 'Titillium Web', sans-serif;
+	padding:5px 0;
+	font-size:16px;
+	font-weight:700;
+}
+
+/*.knop{
+margin:4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+*/
+img.apps{
+	float:left;
+	width:100%;
+}	
+
+h2.apps{
+	text-transform:uppercase;
+	color:#450500;
+	font-family: 'Titillium Web', sans-serif;
 	float:left;
 	width:33.3%;
 	margin-bottom:20px;
 }
-
-img.apps{
-	float:left;
-	width:100%;
-	margin-bottom:10px;
-	}
-
-
-.buttons:first-of-type{margin-top:0px;}
-
-.buttons{
-	margin-top:-60px;
-	margin-bottom:60px;
-	width:100%
-	}
-
-h2.apps{
-	font-size:10px;
-	margin-top:100px;
-	text-transform:uppercase;
-	color:#450500;
-	}
 
 img.chat{
 	width:150px;
@@ -117,98 +182,100 @@ a{
 	color:#450500;
 }
 
-hr{
-	clear:both;
-	margin-top:60px;
-	border:0.1px solid #561400;
+	
+.submenu{
+	margin-bottom:0px;
+	background:white;
 	width:100%;
-	}
-
-hr.tussen{
-	border:0.1px solid #C4161D;
-	margin:0px;
-	width:100%;
-	}
-
-/*span{padding-left:20px;}*/
+	height:35px;
+	border-bottom:solid 1px lightgrey;
+	position:fixed;
+	top:80px;
+	
+}
 
 
 /*---------MENU'S---------*/
 
 /*-------klapmenu's--------*/
 
-.cog{
+
+.hamburger{
   background:none;
-  position:absolute;
-  top:0;
-  right:0;
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:0px 15px 0px 15px;
   color:white;
   border:0;
-  font-size:2em;
-  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  margin-top:26px;
+  float:left;
+}
+
+.cross{
+  background:none;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:21px;
+  float:left;
+  }
+
+.back{
+  background:none;
+  line-height:45px;
+  padding:0px 15px 0px 0px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:26px;
+  float:left;
+}
+
+.cog{
+  background:none;
+  padding:0px 15px 0px 15px;
+  color:white;
+  border:0;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-  margin-top:0.4em;
-  margin-right:0.4em;
+  margin-top:31px;
+  float:right;
+}
+
+.search{
+  background:none;
+  padding:0px 0px 0px 15px;
+  color:white;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  margin-top:29px;
+  float:right;
  
 }
 
 .kruis{
   background:none;
-  position:absolute;
-  top:0px;
- right:0;
-  padding:20px 25px 0px 20px;
-  color:#450500;
-  border:0;
-  font-size:4em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-
-
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  left:0;
-  line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:0px 15px 0px 15px;
   color:white;
   border:0;
-  font-size:2em;
-  font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-  margin-top:0.4em;
-  margin-left:0.4em; 
+  margin-top:31px;
+  float:right;
 }
 
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  left:0;
-  padding:20px 15px 0px 25px;
-  color:#450500;
-  border:0;
-  font-size:4em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-  }
+
   
-.menu,.cogmenu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-.menu ul,.cogmenu ul{margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu,.cogmenu{z-index:1000000; font-weight:bold; font-size:1em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul,.cogmenu ul{margin: 0; padding: 0; list-style-type: none; list-style-image: none;	}
 .menu li,.cogmenu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover,.cogmenu li:hover{display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;color:white;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
 background: rgb(221,4,4); /* Old browsers */
@@ -218,7 +285,7 @@ background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */}
 
 
-.menu ul li a,.cogmenu ul li a { text-decoration:none;  margin: 0px; color:#450500;}
+.menu ul li a,.cogmenu ul li a { text-decoration:none;  margin: 0px; color:#450500; z-index:1000000000000;}
 .menu ul li a:hover,.cogmenu ul li a:hover {  color: #666; text-decoration:none;}
 .menu a,.cogmenu a{text-decoration:none; color:#450500;}
 .menu a:hover,.cogmenu a:hover{text-decoration:none; color:#666;}
@@ -271,40 +338,53 @@ h2.opening{
 	color:white;
 	}
 
+/* Page Banner */
 
-
-
-/*------nieuws P1-----*/
-
-
-
-
-p.nieuws{
-	color:white;
-	padding-bottom:30px;
-	margin:10px 10px 0px 10px;
-	clear:both;
-	line-height:23px;
-	font-size:18px;
-	}
-
-i#nieuws{
-	color:white;
-	margin:20px 20px 30px 0px;
+.page-banner {
+	width:100%;
+	height:80px;
 	text-align:center;
-	}
+	background-color:#e40004;
+}
+
+.page-banner img {
+	width:30%;
+	max-width:85px;
+	height:auto;
+}
+
+.page-banner-sub {
+	background-color:#f6ab6f;
+	padding:5px;
+	text-align:center;
+	font-size:16px;
+	line-height:20px;
+	font-family: 'Titillium Web', sans-serif;
+	color:#e40004;
+	font-weight:700;
+}
+
+/*------nieuws-----*/
+
+#news p {
+	color:#222;
+	line-height:21px;
+	font-size:16px;
+	font-weight:700;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#news p.ticket {
+	color:#222;
+	line-height:16px;
+	font-size:12px;
+	font-weight:300;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
 
 
-/*----nieuws P2------*/
 
-i#nieuws2{color:#C4161D;}
 
-h2.nieuwss{
-	color:#450500;
-	font-size:23px;
-	text-align:left;}
-
-p.nieuws2{text-align:left;color:#450500;}
 
 
 /*-------agenda-----*/
@@ -312,17 +392,12 @@ p.nieuws2{text-align:left;color:#450500;}
 
 p.agenda{
 color:white;
-font-weight:800;
+font-size:13px;
+margin:10px 10px 20px 10px;}
+
+h2.agenda{color:white;
 font-size:16px;
-padding:20px;
-margin:0px -20px 0px -20px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
-background: rgb(221,4,4); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
-}
+margin:20px 10px 0px 10px;}
 
 p.agenda:hover{background:#450500;}
 
@@ -332,32 +407,136 @@ article.date{width:60%;text-align:left;font-size:10px;}
 
 i#date{padding:2px;width:10%;}
 
+.datetile{width:20%;
+float:left;
+font-size:10px;
+color:#808080;
+margin-left:6px;
+text-align:center;}
+
+.datetile:last-of-type{ font-size:12px;
+padding-top:10px;
+width:10%;}
+
+.datesub{width:100%;margin:0px -20px 10px -20px;position:fixed;bottom:0; background:white;}
+
+/* Gemeente */
+
+button.bestel, button.half {
+	background:#ed7139;
+	color:#fff;
+	border:1px solid white;
+	width:50%;
+	margin-right:2%;
+	display:block;
+	margin-bottom:10px;
+	height:40px;
+	cursor:pointer;
+	border-radius:5px;
+	font-size:14px;
+}
+
+button.bestel:hover, button.half:hover {
+	background:#9f0003
+}
+
+
+/* Ondernemingen */
+
+.title-wrapper {
+	width:100%;
+	display:block;
+}
+
+.title {
+	width:80%;
+	float:left;
+	box-sizing:border-box;
+}
+
+.title-icon {
+	width:20%;
+	float:right;
+	box-sizing:border-box;
+	text-align:right;
+}
+
+.title-icon img {
+	width:100%;
+	max-width:100px;
+	background-color:#ccc;
+	border-radius:5px;
+}
+
+.stars {
+	width:50%;
+	color:#FC0;
+}
+
+.button-wrapper {
+	width:100%;
+}
+
+button.locatie {
+	background:#ed7139;
+	color:#fff;
+	border:1px solid white;
+	width:32%;
+	margin-right:2%;
+	float:left;
+	display:block;
+	margin-bottom:10px;
+	height:40px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+button.locatie:hover {
+	background:#9f0003
+}
+button.locatie:last-child {
+	margin-right:0;
+}
+
 /*-----kaart------*/
 
 iframe{
-margin-top:20px;
-width:100%}
+	padding:30px 0px 0px 0px;
+	width:100%;
+}
 
 
 /*-------vraag-----*/
 
 form{width:100%}
 
-input{width:100%; margin-bottom:20px;}
+input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border-radius: 0;
+	border:1px solid #ccc;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
 
 input.vraag:last-of-type{padding-bottom:10em;}
 
 label{
 	float:left;
-	padding-bottom:1em;
+	padding-bottom:10px;
 	color:#450500;
+	width:100%;
 }
 
 input.chat{
-	padding:0px 0px 20px 0px;
-	width:100%;
-	margin:10px 0px 0px 0px;
+	padding:20px 0px 20px 20px;
+	width:90%;
+	margin:20px 0px 0px 0px;
 	}
+	
+	input.chat placeholder{margin:40px;}
 
 
 
@@ -367,32 +546,31 @@ input.chat{
 
 
 div.ticket:nth-of-type(even){
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
-background: rgb(221,4,4); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(221,4,4,1) 2%, rgba(214,105,72,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
-text-align:left;
-margin:0px -20px 0px -20px;
-padding:10px;
-width:106.2%
+	background:#ffffff;
+	text-align:left;
+	box-sizing:border-box;
+	padding:20px 10px;
+	color:#222;
+}
+
+div.ticket:nth-of-type(even):hover {
+	background:#E6E6E6;
 }
 
 div.ticket:nth-of-type(odd){/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#450500+0,6b0c13+100 */
-background: #450500; /* Old browsers */
-background: -moz-linear-gradient(left, #450500 0%, #6b0c13 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #450500 0%,#6b0c13 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #450500 0%,#6b0c13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#450500', endColorstr='#6b0c13',GradientType=1 ); /* IE6-9 */
-margin:0px -20px 0px -20px;
-text-align:left;
-padding:10px;
-width:106.2%;
+	background:#f2f2f2;
+	text-align:left;
+	box-sizing:border-box;
+	padding:10px 10px 20px 10px;
+	color:#222;
+}
+
+div.ticket:nth-of-type(odd):hover {
+	background:#E6E6E6;
 }
 
 
-p.ticket:first-of-type{font-size:16px;}
+/*p.ticket:first-of-type{font-size:16px;}
 p.ticket{
 	color:white;
 	padding-bottom:30px;
@@ -400,27 +578,9 @@ p.ticket{
 	clear:both;
 	line-height:23px;
 	font-size:13px;}
-	
+*/	
 
 h2.ticket{color:white;font-size:20px;margin-left:10px;}
-
-i#ticket{
-	color:#C4161D;
-	font-size:4em;
-	margin-left:auto;
-	margin-right:auto;
-	width:20%;
-	margin-bottom:20px;
-	clear:both;
-}
-
-
-img.nieuws{
-height:300px;
-width:400px;
-overflow:hidden;
-}
-
 
 button.ticket{
 margin:0px 0px 20px 10px;
@@ -444,7 +604,7 @@ margin-left:60px;
 img.apple{float:left;
 width:30%;
 color:#C4161D;
-margin-top:20px;
+margin-top:12px;
 margin-left:10px;
 }
 
@@ -458,18 +618,9 @@ p.download{
 	font-weight:bold;
 	color:#450500;}
 
-h2.afval{font-size:18px;color:#450500}
+h2.afval{font-size:18px;color:#450500; margin-top:40px;}
 
 /*-------Bestuur-----*/
-
-
-hr{width:100%;}
-
-hr.opening{
-	border-bottom:solid 1px white;
-	width:100%;
-	}
-
 
 
 
@@ -484,118 +635,146 @@ input.meldpunt{padding:0px 0px 40px 0px;}
 .trefwoorden{
 	text-align:left;
 	color:#450500;
-	margin-top:20px;
+	margin:20px 0 0 0;
 }
 
 ul.trefwoorden{
-	float:left;
-	width:36%;
 	color:#450500;
-	}
+	column-count:2;
+	-moz-column-count:2;
+	webkit-column-count:2;
+	padding:0 10px 0 0;
+	margin:0 0 0 10px;
+}
 
 p.resultaat{
 	color:#C4161D;
 	font-style:italic;
-	}
+}
 
 p.resultaat:first-of-type{color:black;}
 
-.andere{margin-top:50px;}
 
 /*--------sport----*/
 
 
-h2.sport{
+h2.verenig{
 	width:100%;
 	color:white;
 	text-transform:uppercase;
 	text-align:center;
 	}
-
-/*--------jeugd-----*/
-
-h2.jeugd{
-	width:100%;
-	color:white;
-	text-transform:uppercase;
-	text-align:center;
-}
 
 
 .hamburger-active li{
-	background:#640C00;
+	background:grey;
 	color:white;
 	}
+
 
 
 /*-----*/
 
-.back{
-	color:#640C00;
-	font-size:20px;
-	width:5%;
-	float:left;
-	margin-left:26px;
-	margin-top:-5px;
-	margin-bottom:0px;
-}
 
-.home{
-	color:#561400;
+/*.home{
+	color:#808080;
 	font-size:20px;
 	width:5%;
-	margin-top:-5px;
+	margin-top:10px;
 	margin-bottom:0px;
 	margin-right:26px;
 	float:right;
+	width:5%;
+}*/
 
+
+
+/*.search{
+	color:#808080;
+	font-size:20px;
+	float:right;
+	margin-top:10px;
+	width:5%;
+	margin-right:20px;
+
+	}*/
+.location{
+	color:#808080;
+	font-size:20px;
+	margin-top:5px;
+	margin-left:15px;
+	float:left;
+	
+	}
+.favo{
+	color:#808080;
+	font-size:20px;
+	margin-top:5px;
+	margin-right:15px;
+	float:right;
+	
+	
 
 }
+
+
+
 
 .pijlen{
 width:100%;
 display:block;
-float:left;
+margin-top:5px;
+
 }
+
+
+
+/*------*/
 
 select{
 
 	background:white;
-	color:#561400;
-	border:1px solid #561400;
+	color:#808080 ;
+	border:1px solid #8080800;
 	margin-top:22px;
 	margin-bottom:-40px;
-	margin-right:auto;
-	margin-left:auto;
 	display:block;
 	width:60%;
 	text-align:center;
 }
 
-.submenu{}
-
-
 
 /*----------*/
 
-label:first-of-type{margin-top:30px;}
+
+
+
+
 
 img.nieuws{
-	width:100%;
-	margin:-20px 20px 0px 0px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+	max-width:100%;
+	height:auto;
 }
 
 img.head{
-	width:80px;
-	margin-top:-10px;
-	margin-bottom:20px;
-}
-
-h2.head{
-	color:#C4161D;
-	margin-top:10px;
+	width:15%;
+	margin-top:-50px;
+	margin-bottom:0px;
+	float:right;}
+	
+img.sterren{
+	float:left;
 	}
+	
+img.verenig{width:30%;
+margin-left:auto;
+margin-right:auto;
+display:block;
+}
+	
+h2.ticket{float:left;width:100%;}
+
+
 
 h2.nieuws{
 	font-size:14px;
@@ -629,7 +808,6 @@ h2.bestuur{color:white;
 
 .gemeente{color:white;}
 
-.datechanger{margin-bottom:30px;}
 
 img.sterren{
 	width:40%;
@@ -653,10 +831,15 @@ button.koop{
 	color:white;
 	border:1px solid white;
 	width:100%;
+	margin-bottom:20px;
 }
 
+
+
+/*-----footer-----*/
+
 footer{
-	height:30px;
+	height:10px;
 	clear:both;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd0404+2,d66948+100 */
 	background: rgb(221,4,4); /* Old browsers */
@@ -664,12 +847,353 @@ footer{
 	background: -webkit-linear-gradient(left, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(221,4,4,1) 2%,rgba(214,105,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0404', endColorstr='#d66948',GradientType=1 ); /* IE6-9 */
+	width:100%;
+	position:fixed;
+	bottom:0;
 }
 
 p.footer{
 	text-align:center;
-	padding-top:12px;
-	font-size:9px;
+	font-size:4px;   
 	color:white;
 	width:100%;
 }
+
+
+
+/*--------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUMOSELECT OVERWRITE */
+
+.sumo{
+	margin-top:5px;
+	position:absolute;
+	z-index:10000;
+	margin-left:240px;
+	color: #808080;
+	float:right;
+	font-size:20px;
+
+}
+
+.SumoSelect {
+	position:absolute;
+	font-size: 16px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#808080;
+	background:white;
+	font-family: 'Titillium Web', sans-serif;
+	margin-left:50%;
+	width:150px;
+	left:-85px;	
+}
+
+.sumo-wrapper {
+	display:inline-block;	
+	width:100%;
+}
+
+.sumo-wrapper .sumo-half .SumoSelect{
+	display:inline-block;	
+	width: 49%;	
+}
+
+.sumo-wrapper .sumo-third .SumoSelect{
+	display:inline-block;	
+	width: 32%;	
+}
+
+.sumo-wrapper .sumo-fourth .SumoSelect{
+	display:inline-block;	
+	width: 23%;	
+}
+
+
+
+
+.SumoSelect > .CaptionCont > span {
+	cursor:pointer;
+	width:100%;
+	margin-left:5px;
+}
+
+.SlectBox {
+	width:100%;
+	display:block !important;
+	cursor:pointer;
+}
+
+.SumoSelect > .CaptionCont {
+	border:none;
+    border-radius: 0px;
+    margin: 0;
+    min-height: 23px;
+    position: relative;
+	line-height: 23px;	
+}
+
+
+#left .SumoSelect > .CaptionCont {
+	border:none;
+	border-bottom: 1px solid #a4a4a4;
+	text-transform:uppercase;
+}
+
+.SumoSelect:hover > .CaptionCont {
+	box-shadow: none;
+	border-color: #a4a4a4;
+}
+
+li.opt.option-create {
+	background-color:#bcc700;
+}
+
+li.opt.option-create label{
+	color:white;	
+	font-weight:normal;
+}
+li.opt.option-create:hover {
+	background-color:#bcc700 !important;
+
+}
+li.opt.option-create:hover label{
+	color:black;	
+}
+
+li.opt.inactive {
+	color: 	#a7a08d;
+}
+
+li.opt.inactive:hover {
+	color: 	#fff;
+}
+
+#searchproject {
+	margin-top:15px;
+}
+
+#createreport {
+	margin-top:15px;
+}
+
+.SumoSelect > .optWrapper {
+	text-transform:uppercase;
+	text-align:center;
+
+	
+}
+
+.open .SumoSelect {
+	margin-top:20px
+}
+
+.open .SumoSelect > .optWrapper {
+    opacity: 1;
+    top: 35px;
+    /*visibility: visible;*/
+	display:block;
+    z-index: 101;
+	top: 0px;
+	min-height:250px;
+	position:relative;
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay{
+   /* background-color:#a4a4a4;*/
+    background: rgba(64, 58, 38, 0.4);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	z-index:102;
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay i{
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    margin-left: -23px;
+    margin-top: -23px;
+    z-index:98;
+    overflow: auto;
+	font-size:25px;
+	z-index:103;
+	color:grey;
+
+
+}
+
+.open .SumoSelect > .optWrapper .load-overlay img{	
+	top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    z-index:98;
+    overflow: auto;
+	z-index:103;
+	position:relative;
+	width:50px;
+	height:50px;
+
+}
+
+
+.open .SumoSelect .CaptionCont.SelectBox {
+	display:none;	
+}
+
+.SumoSelect > .CaptionCont > label {
+    width: 40px;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+	background-image:none;
+	margin-top:3px;
+	opacity:1;
+	}
+	
+.SumoSelect > .CaptionCont > label > i:before {
+    content: "\f078"; 
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-feature-settings: normal;
+	font-kerning: auto;
+	font-language-override: normal;
+	font-size: inherit;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-synthesis: weight style;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: auto;
+	color: #808080;
+	font-size:12px;
+	
+	
+ }
+/*
+.open .SumoSelect.hideCaption .CaptionCont.SlectBox {
+	display:none !important;	
+}
+*/
+
+.open .SumoSelect > .optWrapper > .options > li {
+ 	font-weight: bold;
+	
+}
+
+.SumoSelect > .optWrapper > .options li label {
+   color: #808080;
+}
+
+.open .SumoSelect > .optWrapper > .options > li.selected {
+ 	background-color: #403a26;
+    color: #fff;
+	
+}
+
+.SumoSelect > .optWrapper.isFloating {
+	height:250px;
+	max-height:250px;
+	width:100%;
+}
+
+/*For multiselect*/
+.open .SumoSelect > .optWrapper > .options > .group > label {
+	color:#B9D82F;	
+}
+
+.open .SumoSelect > .optWrapper > .options > .group > ul > li.selected {
+    background-color: #403a26;
+    color: #fff;
+}
+
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i, .SumoSelect .select-all.selected > span i, .SumoSelect .select-all.partial > span i {
+    background-color: #bcc700;
+   
+}
+
+/*END for multiselect*/
+#left .SumoSelect > .CaptionCont.search input.search-txt{
+	border-radius: 0px;	
+}
+
+.SumoSelect > .optWrapper > .options li.opt:hover { background-color: #A7A08D; }
+
+/* Report Bar styling */
+
+.bar-wrapper {
+	width:88%;
+	float:left;
+}
+
+.bar-percent {
+	width:12%;
+	float:right;
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) iPhone Landscape*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	  .knop{
+	float:left;
+	width:18%;
+	margin:4px;
+
+}
+
+img.apps{
+	float:left;
+	width:100%;
+	}
+
+.buttons{
+	margin-top:0px;
+	margin-bottom:60px;
+	width:100%
+	}
+	
+h2.apps{width:20%;float:left;display:none;}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.btn-wrapper {
+	width:33.33%;
+}
+
+.btn-copy {
+	font-size:12px;
+}
+
+}
+
+
+
