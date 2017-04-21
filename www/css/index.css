@@ -42,7 +42,7 @@ body {
 header{
 	background:white;
 	width:100%;
-	background: url(../img/hageland2.jpg) center no-repeat;
+	background: url(../img/hageland2.png) center no-repeat;
 	background-size:cover;
 	height:80px;
 	position:fixed;
@@ -1249,11 +1249,16 @@ li.opt.inactive:hover {
 
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) iPhone Landscape*/
-@media only screen  and (max-width: 956px) {
+@media only screen and (max-width: 956px) {
 .btn-wrapper {
 	width:25%;
 	padding:30px;
 }
+
+.btn-copy {
+	font-size:80%;
+}
+
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
