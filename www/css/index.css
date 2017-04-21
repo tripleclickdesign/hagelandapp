@@ -203,8 +203,8 @@ h2{
 /*------knoppen-----*/
 
 .btn-wrapper {
-	width:25%;
-	padding:5px;
+	width:20%;
+	padding:30px;
 	float:left;
 	display:block;
 	box-sizing:border-box;
@@ -1249,6 +1249,12 @@ li.opt.inactive:hover {
 
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) iPhone Landscape*/
+@media only screen  and (max-width: 956px) {
+.btn-wrapper {
+	width:25%;
+	padding:30px;
+}
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 	  .knop{
@@ -1282,6 +1288,7 @@ h2.apps{width:20%;float:left;display:none;}
 
 .btn-wrapper {
 	width:33.33%;
+	padding:5px;
 }
 
 .btn-copy {
